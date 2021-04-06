@@ -13,7 +13,7 @@ const projectsData = {
             image: './images/projects_portfolio.svg',
             header: 'This Portfolio Site',
             description: 'Every once in a while, you should treat yourself. Built with React.js and the React Router libraries.',
-            links: [{id: 1, title: 'Source Code', link: 'https://github.com/31i0t/Portfolio-Templating'}]
+            links: [{id: 1, title: 'Source Code', link: 'https://github.com/31i0t/portfolio_website'}]
         },
     ],
 
