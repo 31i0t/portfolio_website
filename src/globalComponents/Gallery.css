@@ -1,0 +1,70 @@
+#image-gallery-description p{
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-size: 2.5vw;
+    color: #565858;
+}
+
+#image-gallery-description h2{
+    font-family: 'Roboto Slab';
+    font-size: 1.5rem;
+    font-size: 3.5vw;
+    color: black;
+    text-align: center;
+}
+
+#image-gallery-container{
+    margin: 0 5%;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+    height: min-content
+}
+
+#image-gallery-container img{
+    width: 100%;
+}
+
+#image-gallery-grid{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    
+}
+
+#image-gallery-grid button {
+    font-size: 1.25rem;
+    width: min-content;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#image-gallery-description{
+    margin: 5% 0;
+    background-color: white;
+    padding: 1rem;
+    width: 40%;
+    border-radius: 0.2rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: min-content;
+}
+
+#next-button, #prev-button{
+    font-size: 2rem;
+    color: white;
+}
+
+@media(max-width: 30rem) {
+    #next-button, #prev-button {
+        font-size: 1rem;
+    }
+    #image-gallery-container {
+        margin-bottom: 2rem;
+    }
+}

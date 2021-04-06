@@ -1,0 +1,123 @@
+
+#footer-container h2 {
+    align-self: center;
+    margin: 0.5rem 0;
+    font-family: 'Roboto Slab';
+    font-size: 1.3rem;
+    color: white;
+}
+
+#footer-container li {
+    list-style-type: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: white;
+}
+
+#footer-container li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: white;
+    white-space: nowrap;
+}
+
+#footer-container li a:hover{
+    text-decoration: underline;
+}
+
+#footer-container li a.active {
+    color: #FDB447;
+    border-bottom: 0.1rem #FDB447 solid;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-page {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem 0;
+    padding-bottom: 5rem;
+    max-width: 25rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0 1rem;
+}
+
+@media(max-width: 30rem)
+{
+  #footer-container h2 {
+    font-size: 0.9rem;
+  }
+
+  #footer-container li {
+    font-size: 0.7rem;
+  }
+
+  #footer-container li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 0.7rem;
+    color: white;
+}
+
+  #footer-container{
+      padding: 0.5 0rem;
+  }
+
+  .footer-column {
+      margin: 0 0.5rem;
+  }
+}
+
+@media(max-width: 20rem)
+{
+  #footer-container h2 {
+    font-size: 0.7rem;
+  }
+
+  #footer-container li {
+    font-size: 0.5rem;
+  }
+
+  #footer-container li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 0.5rem;
+    color: white;
+}
+
+  #footer-container{
+      padding: 0.2 0rem;
+  }
+
+  .footer-column {
+      margin: 0 0.2rem;
+  }
+}

@@ -1,0 +1,140 @@
+#infopanel-container h2{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+#infopanel-container p{
+    display: grid;
+    height: min-content;
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    color: #565858;
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+    width: 100%;
+
+}
+
+#infopanel-item img{
+    width: 100%;
+    grid-row-end: span 3;
+}
+
+#infopanel-item a{
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #3270FB;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+#infopanel-item a:hover{
+    color: #3270FB;
+    text-decoration: underline;
+}
+
+#infopanel-links {
+    display: flex;
+    align-content: center;
+}
+
+#infopanel-container {
+    display: grid;
+    justify-content: center;
+    grid-gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+
+#infopanel-item {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    justify-content: left;
+    height: min-content;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 55rem;
+    transition: all 0.5s;
+}
+
+#infopanel-item:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1.05, 1.05);
+    z-index: 1;
+}
+
+
+@media(max-width: 60rem){
+    #infopanel-item {
+        margin: 0 2%;
+    }
+    #infopanel-container {
+        margin-bottom: 5rem;
+        grid-gap: 2rem;
+    }
+
+    #infopanel-container h2 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    #infopanel-container p {
+        font-size: 1rem;
+    }
+
+    #infopanel-item a{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 30rem){
+    #infopanel-container {
+        margin-bottom: 4rem;
+        grid-gap: 1rem;
+    }
+
+    #infopanel-container h2 {
+        margin-top: 0.3rem;
+        font-size: 0.8rem;
+        margin-left: 0.8rem;
+    }
+
+    #infopanel-container p {
+        font-size: 0.7rem;
+        margin-left: 0.8rem;
+    }
+
+    #infopanel-item a{
+        font-size: 0.7rem;
+        margin-left: 0.8rem;
+    }
+}
+
+@media(max-width: 20rem){
+
+    #infopanel-item {
+        grid-template-columns: 40% 55%;
+    }
+
+    #infopanel-container h2 {
+        margin-top: 0.1rem;
+        font-size: 0.6rem;
+        margin-left: 0.4rem;
+    }
+
+    #infopanel-container p {
+        font-size: 0.5rem;
+        margin-left: 0.4rem;
+    }
+
+    #infopanel-item a{
+        font-size: 0.5rem;
+        margin-left: 0.4rem;
+    }
+}

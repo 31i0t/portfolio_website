@@ -1,0 +1,14 @@
+
+.title {
+    font-family: 'Patua One';
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+@media(max-width: 30rem)
+{
+  .title {
+    font-size: 0.7rem;
+  }
+}
