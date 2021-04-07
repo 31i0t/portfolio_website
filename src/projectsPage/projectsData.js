@@ -22,7 +22,7 @@ const projectsData = {
             id: 1,
             image: './images/projects_elements.png',
             header: 'Project Elements',
-            description: 'My time at Capital One was spent working on the savings app for Project Elements.',
+            description: 'My time at Capital One was spent working on the mobile savings app for Project Elements.',
             links: [{id: 1, title: 'About', link: 'https://www.behance.net/gallery/57120701/Capital-One-Project-Elements-Packaging-x-SXSW'}]
         },
     ],

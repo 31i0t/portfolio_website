@@ -9,7 +9,7 @@ const questions = [
       id: 2,
       title: 'When will you graduate?',
       description:
-        'I will graduate with a BSc in Computer Science (Web and Mobile Development) in June of 2023',
+        'I will graduate with a BSc in Computer Science (Web and Mobile Development) in March of 2023',
     },
     {
       id: 3,

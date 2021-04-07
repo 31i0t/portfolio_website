@@ -11,7 +11,7 @@ const Projects = () => {
         <div>
             <Title title={"My Projects"}/>
             <InfoPanel items={projectsData.infopanels}/>
-            <Title title={"Group Projects"}/>
+            <Title title={"Team Projects"}/>
             <InfoPanel items={projectsData.infopanels2}/>
         </div>
     );
