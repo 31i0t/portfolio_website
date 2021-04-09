@@ -12,26 +12,32 @@
     color: white;
     font-family: 'Open Sans';
     font-size: 1rem;
-    color: white;
 }
 
-#footer-container li a {
+.footer-column2 li a {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans';
     font-size: 1rem;
-    color: white;
     white-space: nowrap;
 }
 
-#footer-container li a:hover{
-    text-decoration: underline;
+.footer-column3 li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
-#footer-container li a.active {
-    color: #FDB447;
-    border-bottom: 0.1rem #FDB447 solid;
+.footer-column2 li a:hover {
+  text-decoration: underline;
 }
+
+.footer-column3 li a:hover {
+  text-decoration: underline;
+}
+
 
 ul {
     margin: 0;
@@ -45,10 +51,6 @@ footer {
     background-color: black;
 }
 
-.footer-page {
-    color: white;
-    text-decoration: none;
-}
 
 #footer-container {
     display: grid;
@@ -84,7 +86,7 @@ footer {
     font-family: 'Open Sans';
     font-size: 0.7rem;
     color: white;
-}
+  }
 
   #footer-container{
       padding: 0.5 0rem;
@@ -92,6 +94,14 @@ footer {
 
   .footer-column {
       margin: 0 0.5rem;
+  }
+
+  .footer-column2 {
+    margin: 0 0.5rem;
+  }
+
+  .footer-column3 {
+    margin: 0 0.5rem;
   }
 }
 
@@ -119,5 +129,13 @@ footer {
 
   .footer-column {
       margin: 0 0.2rem;
+  }
+
+  .footer-column2 {
+    margin: 0 0.2rem;
+  }
+
+  .footer-column3 {
+    margin: 0 0.2rem;
   }
 }

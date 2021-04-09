@@ -5,3 +5,40 @@ html, body {
     padding: 0;
     border: 0;
 }
+
+.header-active-link:hover a{
+    cursor: pointer;
+    color: #3270FB;
+}
+
+.header-active-link a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-active {
+    border-bottom: 0.2rem #3270FB solid;
+}
+
+.header-active a {
+    color: #3270FB;
+}
+
+.footer-active-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-active-link a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-active a {
+    color: #FDB447;
+    border-bottom: 0.1rem #FDB447 solid;
+}
+
+.footer-active a:hover {
+    text-decoration: none;
+}

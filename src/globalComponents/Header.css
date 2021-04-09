@@ -25,11 +25,6 @@
     font-size: 1rem;
 }
 
-#header-container li a.active {
-    color: #3270FB;
-    border-bottom: 0.2rem #3270FB solid;
-}
-
 #header {
     background-color: #FDB447;
     margin: 0;
@@ -86,19 +81,13 @@
 .addNavBarHover{
     top: 0;
     position: fixed;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #header-description-nav-bar li{
     width: min-content;
     text-align: center;
 }
-
-.header-description-nav-page{
-    color: black;
-    text-decoration: none;
-}
-
 
 @media (max-width: 60rem) {
     #header-description-nav-bar {

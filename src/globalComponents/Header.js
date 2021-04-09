@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import './Header.css';
-import {
-      Route,
-      NavLink,
-      HashRouter
-    } from "react-router-dom";
 
 export default class Header extends React.Component {
 
@@ -12,16 +10,19 @@ export default class Header extends React.Component {
         super(props)
         this.navBarDiv = React.createRef();
         this.navBarUl = React.createRef();
+        this.projectsAnchor = React.createRef();
+        this.experienceAnchor = React.createRef();
+        this.referencesAnchor = React.createRef();
+        this.educationAnchor = React.createRef();
     }
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleNavBar)
         window.addEventListener('resize', this.handleNavBar)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleNavBar)
-        window.removeEventListener('resize', this.handleNavBar)
+        this.projectsAnchor.current.addEventListener('click', this.scrollToProjects)
+        this.experienceAnchor.current.addEventListener('click', this.scrollToExperience)
+        this.referencesAnchor.current.addEventListener('click', this.scrollToReferences)
+        this.educationAnchor.current.addEventListener('click', this.scrollToEducation)
     }
 
     handleNavBar = () => {    
@@ -48,6 +49,48 @@ export default class Header extends React.Component {
         }
     }
 
+    scrollToProjects = () => {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const projectsPage = document.getElementById("projectsPage")
+        var scrollToPos = projectsPage.getBoundingClientRect().y
+
+        scroll.scrollTo(scrollTop + scrollToPos - 100, {
+                                            duration: 800,
+                                            smooth: true})   
+    }
+
+    scrollToExperience = () => {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const experiencePage = document.getElementById("experiencePage")
+        var scrollToPos = experiencePage.getBoundingClientRect().y
+
+        scroll.scrollTo(scrollTop + scrollToPos - 100, {
+                                            duration: 800,
+                                            smooth: true})   
+    }
+
+    scrollToReferences = () => {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const referencesPage = document.getElementById("referencesPage")
+        var scrollToPos = referencesPage.getBoundingClientRect().y
+
+        scroll.scrollTo(scrollTop + scrollToPos - 100, {
+                                            duration: 800,
+                                            smooth: true})   
+    }
+
+    scrollToEducation = () => {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const educationPage = document.getElementById("educationPage")
+        var scrollToPos = educationPage.getBoundingClientRect().y
+
+        scroll.scrollTo(scrollTop + scrollToPos - 100, {
+                                            duration: 800,
+                                            smooth: true})   
+    }
+
+
+
     render() {
         return (
             <div id = "header">
@@ -60,10 +103,10 @@ export default class Header extends React.Component {
                         <h2 className = "header-description-item">I am passionate about using technology to positively impact the lives of everyday people.</h2>
                         <div ref = {this.navBarDiv}>
                             <ul ref = {this.navBarUl} id = "header-description-nav-bar">
-                                <li><NavLink className= "header-description-nav-page" exact to="/">Projects</NavLink></li>
-                                <li><NavLink className= "header-description-nav-page" to="/experience">Experience</NavLink></li>
-                                <li><NavLink className= "header-description-nav-page" to="/references">References</NavLink></li>
-                                <li><NavLink className= "header-description-nav-page" to="/education">Education</NavLink></li>
+                                <li id = "projectsLink" className= "header-active-link"><a ref = {this.projectsAnchor} >Projects</a></li>
+                                <li id = "experienceLink" className= "header-active-link"><a ref = {this.experienceAnchor} >Experience</a></li>
+                                <li id = "referencesLink" className= "header-active-link"><a ref = {this.referencesAnchor} >References</a></li>
+                                <li id = "educationLink" className= "header-active-link"><a ref = {this.educationAnchor} >Education</a></li>
                             </ul>
                         </div>
                     </div>
