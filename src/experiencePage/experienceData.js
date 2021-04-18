@@ -12,7 +12,7 @@ const experienceData = {
             header: 'Lab Technician - Stanford University',
             description: 'Interned in the Khavari Lab over several years under the direction of a PhD candidate studying stem cell biology and regenerative medicine. Was introduced to the power of data modelling using the open source statistical software R.',
             footer: 'Stanford, Summers of 2016, 2017',
-            links: [{id: 1, title: 'Khavari Labs', link: 'https://khavarilab.stanford.edu/the-khavari-lab'}]
+            links: [{id: 1, title: 'Khavari Labs', link: 'https://khavarilab.stanford.edu/the-khavari-lab'}, {id: 2, title: 'Reference', link: 'https://drive.google.com/file/d/1wv43qk9xWDlXOwGqtSWi7jomUSZtqmyR/view'}]
         },
         {
             id: 3,
