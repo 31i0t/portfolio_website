@@ -2,8 +2,8 @@ const educationData = {
     excerpts: [
         {
             id: 1,
-            header: 'BSc Computer Science (Web and Mobile Development)',
-            description: '4.0 GPA, Pursuing a BSc in Computer Science at Goldsmiths with a specialism in Web and Mobile Development.',
+            header: 'BSc Computer Science (Machine Learning and Artificial Intelligence)',
+            description: '4.0 GPA, Pursuing a BSc in Computer Science at Goldsmiths with a specialism in Machine Learning and Artificial Intelligence.',
             footer: 'University of London, 2020-2023',
             links: [],
         },

@@ -96,7 +96,7 @@ export default class Header extends React.Component {
             <div id = "header">
                 <header id = "header-container">
                     <div id = "header-image-container">
-                        <img id = "header-image" src='./images/header_image.jpg' alt='Image of practice'/>
+                        <img id = "header-image" src='./images/header_image.jpg' alt='Portfolio Header Image'/>
                     </div>
                     <div id = "header-description-container">
                         <h1 className = "header-description-item">Eliot Makoski</h1>
