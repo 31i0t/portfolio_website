@@ -5,7 +5,7 @@ const projectsData = {
             id: 1,
             image: './images/alwayswatching.jpeg',
             header: 'Always Watching',
-            description: 'Explores digital privacy by bringing together a robust backend, frontend, and machine learning algorithm.',
+            description: 'Explores digital privacy by bringing together a robust backend, frontend, and machine learning algorithm. Deployed with AWS. View technical highlights on the \'About\' page.',
             links: [{id: 1, title: 'Visit', link: 'https://alwayswatching.io'}, {id: 2, title: 'About', link: 'https://www.linkedin.com/posts/eliotmakoski_im-excited-to-share-a-recent-project-of-activity-6836667108240216065-EDFb'}, {id: 3, title: 'React Source', link: 'https://github.com/31i0t/always_watching'},  {id: 4, title: 'Django Source', link: 'https://github.com/31i0t/alwayswatching_api'}]
         },
         {
