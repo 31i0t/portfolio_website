@@ -95,6 +95,7 @@
         width: 100%;
         top: 0;
         border-radius: 0;
+        transition: none;
     }
 
     #header-description-container div{
