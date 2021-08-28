@@ -15,7 +15,7 @@ const questions = [
       id: 3,
       title: 'What are your skills?',
       description:
-        'I\'m well versed in Python, JavaScript, React, p5.js, Swift (Xcode), HTML, CSS and Git. I\'m also familiar with Photoshop, Autodesk Maya, and Sketch. However, I\'m always learning new technologies, and I love love love experimenting with brand new things.',
+        'I\'m well versed in Python, React, Django, AWS, JavaScript, Keras (machine learning), p5.js, HTML, CSS and Git. I\'m also familiar with Photoshop, Autodesk Maya, and Sketch. However, I\'m always learning new technologies, and I love love love experimenting with brand new things',
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const questions = [
       id: 8,
       title: 'Which area of Computer Science are you most interested in?',
       description:
-        'Software engineering, and using it as a force for good',
+        'Software engineering, and using it to have a positive impact',
     },
   ]
   
